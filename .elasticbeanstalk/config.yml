@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: test-env
+global:
+  application_name: SampleApp
+  default_ec2_keyname: null
+  default_platform: Ruby 2.0 (Puma)
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
