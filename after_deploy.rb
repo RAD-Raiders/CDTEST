@@ -1,12 +1,12 @@
+set -ev
+bundle exec rake:units
 require "open-uri"
 require 'json'
 data = open("http://finracrd.elasticbeanstalk.com/").read
 puts data
 build = JSON.parse(data)
 curr_id =  build[0]["buildid"]
-t = Time.now
-s_time = t.strftime "%Y-%m-%d-&h%m%s"
-id =  (curr_id.to_i + 1).to_s
+id =  (curr_id.to_i).to_s
 puts "http://finracrd.elasticbeanstalk.com/results/#{id}/integration/PASS"
 data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/integration/PASS").read
 =begin
