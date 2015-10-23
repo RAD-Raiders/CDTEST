@@ -3,4 +3,4 @@ rvm:
   - 2.2.3
 after_success:
 - chmod ugo+x ./after_deploy.rb
-script: ./after_deploy.rb
+- ./after_deploy.rb
