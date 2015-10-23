@@ -11,8 +11,8 @@ after_success:
 #comment to test
 deploy:
 - provider: elasticbeanstalk
-- access_key_id: AKIAIGCLPOYPKGXSOKMA
-- secret_access_key: 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
+- access_key_id: "AKIAIGCLPOYPKGXSOKMA"
+- secret_access_key: "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"
 - region: us-west-2
 - app: rubyonrails
 - env: rails-env-dev
