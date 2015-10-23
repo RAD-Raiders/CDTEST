@@ -1,4 +1,3 @@
-set -ev
 require 'open-uri'
 require 'json'
 data = open("http://finracrd.elasticbeanstalk.com/").read
