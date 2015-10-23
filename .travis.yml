@@ -9,15 +9,15 @@ after_success:
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
 addons:
-- artifacts: true
-- s3_region: "us-west-2" # defaults to "us-east-1"
+	artifacts: true
+	s3_region: "us-west-2" # defaults to "us-east-1"
 
 #comment to test
 deploy:
-- provider: elasticbeanstalk
-- access_key_id: AKIAIKOCD266ZK2GTPKQ
-- secret_access_key: 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
-- region: us-west-2
-- app: rubyonrails
-- env: rails-env-dev
-- bucket_name: elasticbeanstalk-us-west-2-901766598996
+	provider: elasticbeanstalk
+	access_key_id: AKIAIKOCD266ZK2GTPKQ
+	secret_access_key: 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
+	region: us-west-2
+	app: rubyonrails
+	env: rails-env-dev
+	bucket_name: elasticbeanstalk-us-west-2-901766598996
