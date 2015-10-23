@@ -5,6 +5,6 @@ rvm:
 gemfile:
   - Gemfile
 after_success:
-- rvm install 2.2.3
+- gem install bundler
 - chmod ugo+x ./after_deploy.rb
 - ./after_deploy.rb
