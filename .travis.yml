@@ -1,10 +1,10 @@
 language: ruby
 rvm:
   - 2.2.3
-before_install:
-  - rvm install 2.2.3
+
 gemfile:
   - Gemfile
 after_success:
+- rvm install 2.2.3
 - chmod ugo+x ./after_deploy.rb
 - ./after_deploy.rb
