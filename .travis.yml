@@ -2,5 +2,5 @@ language: ruby
 rvm:
   - 2.2.3
 after_success:
-- chmod ugo+x ./after_deploy.sh
-- ./after_deploy.sh
+- chmod ugo+x ./after_deploy.rb
+- ./after_deploy.rb
