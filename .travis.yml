@@ -12,12 +12,8 @@ after_success:
 deploy:
 provider: elasticbeanstalk
 access_key_id: AKIAIGCLPOYPKGXSOKMA
-secret_access_key: 
-	secure: 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
-region: /us-west-2
+secret_access_key: vKzre68UcUZFucGLElZbxMZaPLdZFzcOae7PEkfh
+region: us-west-2
 app: rubyonrails
 env: rails-env-dev
-bucket_name: 
- on:
-repo: 
-branch: 
+bucket_name: elasticbeanstalk-us-west-2-901766598996
