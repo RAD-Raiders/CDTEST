@@ -12,9 +12,9 @@ after_success:
 deploy:
 	provider: elasticbeanstalk
 	edge: true
-	app: rubyonrails # Elastic Beanstalk app name
-	env: rails-env-dev # Elastic Beanstalk env name
-	bucket_name: elasticbeanstalk-us-west-2-901766598996 # S3 bucket used by Elastic Beanstalk
+	app: rubyonrails
+	env: rails-env-dev
+	bucket_name: elasticbeanstalk-us-west-2-901766598996
 	region: us-west-2
 	access_key_id: "AKIAIGCLPOYPKGXSOKMA"
 	secret_access_key: "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"
