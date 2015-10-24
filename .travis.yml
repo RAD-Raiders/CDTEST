@@ -9,7 +9,6 @@ after_success:
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
 
-#comment to test
 deploy:
 provider: elasticbeanstalk
 edge: true
