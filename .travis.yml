@@ -9,12 +9,14 @@ after_success:
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
 
+#comment to test
 deploy:
-	provider: elasticbeanstalk
+  -	provider: elasticbeanstalk
 	edge: true
+	skip_cleanup: true
+	access_key_id: AKIAIGCLPOYPKGXSOKMA
+	secret_access_key: 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
+	region: us-west-2
 	app: rubyonrails
 	env: rails-env-dev
 	bucket_name: elasticbeanstalk-us-west-2-901766598996
-	region: us-west-2
-	access_key_id: "AKIAIGCLPOYPKGXSOKMA"
-	secret_access_key: "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"
