@@ -9,6 +9,13 @@ id =  (curr_id.to_i + 1).to_s
 puts "http://finracrd.elasticbeanstalk.com/results/#{id}/unit/PASS"
 data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/unit/PASS").read
 
+
+puts "http://finracrd.elasticbeanstalk.com/results/#{id}/deploy/PASS"
+data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/deploy/PASS").read
+
+puts "http://finracrd.elasticbeanstalk.com/results/#{id}/build/PASS"
+data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/build/PASS").read
+
 db_access = ActiveRecord::Base.connected?
 data = open("http://finracrd.elasticbeanstalk.com/").read
 puts data
@@ -16,10 +23,10 @@ build = JSON.parse(data)
 curr_id =  build[0]["buildid"]
 id =  (curr_id.to_i).to_s
 if db_access
-	puts "http://finracrd.elasticbeanstalk.com/results/#{curr_id}/intergration/PASS"
+	puts "http://finracrd.elasticbeanstalk.com/results/#{id}/intergration/PASS"
 	data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/intergration/PASS").read
 else
-	puts "http://finracrd.elasticbeanstalk.com/results/#{curr_id}/integration/FAIL"
+	puts "http://finracrd.elasticbeanstalk.com/results/#{id}/integration/FAIL"
 	data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/integration/FAIL").read
 end
 

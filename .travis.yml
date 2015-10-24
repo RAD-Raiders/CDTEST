@@ -5,9 +5,13 @@ rvm:
 gemfile:
   - Gemfile
 after_success:
-- gem install bundler
+
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
+
+after_failure:
+- chmod ugo+x ./after_failure.rb
+- ruby ./after_failure.rb
 
 deploy:
   provider: elasticbeanstalk
@@ -19,3 +23,7 @@ deploy:
   app: rubyonrails
   env: rails-env-dev
   bucket_name: elasticbeanstalk-us-west-2-901766598996
+
+after_deploy:
+- chmod ugo+x ./aws_deploy.rb
+- ruby ./aws_deploy.rb
