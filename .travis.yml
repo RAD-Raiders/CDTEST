@@ -13,11 +13,11 @@ addons:
 	s3_region: "us-west-2" # defaults to "us-east-1"
 
 deploy:
-    - provider: elasticbeanstalk
-      edge: true
-      app: rubyonrails # Elastic Beanstalk app name
-      env: rails-env-dev # Elastic Beanstalk env name
-      bucket_name: elasticbeanstalk-us-west-2-901766598996 # S3 bucket used by Elastic Beanstalk
-      region: us-west-2
-      access_key_id: "AKIAIGCLPOYPKGXSOKMA"
-      secret_access_key: "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"
+	provider: elasticbeanstalk
+	edge: true
+	app: rubyonrails # Elastic Beanstalk app name
+	env: rails-env-dev # Elastic Beanstalk env name
+	bucket_name: elasticbeanstalk-us-west-2-901766598996 # S3 bucket used by Elastic Beanstalk
+	region: us-west-2
+	access_key_id: "AKIAIGCLPOYPKGXSOKMA"
+	secret_access_key: "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"
