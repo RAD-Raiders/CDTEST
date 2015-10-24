@@ -8,9 +8,6 @@ after_success:
 - gem install bundler
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
-addons:
-	artifacts: true
-	s3_region: "us-west-2" # defaults to "us-east-1"
 
 deploy:
 	provider: elasticbeanstalk
