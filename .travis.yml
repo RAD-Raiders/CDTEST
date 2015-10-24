@@ -11,7 +11,7 @@ after_success:
 
 #comment to test
 deploy:
-  -	provider: elasticbeanstalk
+	provider: elasticbeanstalk
 	edge: true
 	skip_cleanup: true
 	access_key_id: AKIAIGCLPOYPKGXSOKMA
