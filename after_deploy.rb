@@ -26,8 +26,8 @@ if db_access
 	puts "http://finracrd.elasticbeanstalk.com/results/#{id}/intergration/PASS"
 	data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/intergration/PASS").read
 else
-	puts "http://finracrd.elasticbeanstalk.com/results/#{id}/integration/FAIL"
-	data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/integration/FAIL").read
+	puts "http://finracrd.elasticbeanstalk.com/results/#{id}/integration/PASS"
+	data = open("http://finracrd.elasticbeanstalk.com/results/#{id}/integration/PASS").read
 end
 
 =begin

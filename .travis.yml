@@ -5,7 +5,6 @@ rvm:
 gemfile:
   - Gemfile
 after_success:
-
 - chmod ugo+x ./after_deploy.rb
 - ruby ./after_deploy.rb
 
