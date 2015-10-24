@@ -10,12 +10,12 @@ after_success:
 - ruby ./after_deploy.rb
 
 deploy:
-provider: elasticbeanstalk
-edge: true
-skip_cleanup: true
-access_key_id: AKIAIGCLPOYPKGXSOKMA
-secret_access_key: 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
-region: us-west-2
-app: rubyonrails
-env: rails-env-dev
-bucket_name: elasticbeanstalk-us-west-2-901766598996
+	provider: elasticbeanstalk
+	edge: true
+	skip_cleanup: true
+	access_key_id: AKIAIGCLPOYPKGXSOKMA
+	secret_access_key: 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
+	region: us-west-2
+	app: rubyonrails
+	env: rails-env-dev
+	bucket_name: elasticbeanstalk-us-west-2-901766598996
