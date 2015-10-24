@@ -14,8 +14,9 @@ addons:
 
 #comment to test
 deploy:
-	provider: elasticbeanstalk
+  -	provider: elasticbeanstalk
 	edge: true
+	skip_cleanup: true
 	access_key_id: AKIAIKOCD266ZK2GTPKQ
 	secret_access_key: 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
 	region: us-west-2
