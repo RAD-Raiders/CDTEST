@@ -21,3 +21,6 @@ deploy:
 	app: rubyonrails
 	env: rails-env-dev
 	bucket_name: elasticbeanstalk-us-west-2-901766598996
+branches:
+ only:
+- master
