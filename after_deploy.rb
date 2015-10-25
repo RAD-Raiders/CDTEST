@@ -1,3 +1,4 @@
+#comment
 require 'open-uri'
 require 'json'
 require 'active_record'
