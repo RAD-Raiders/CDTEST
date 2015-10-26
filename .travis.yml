@@ -16,8 +16,8 @@ deploy:
   provider: elasticbeanstalk
   edge: true
   skip_cleanup: true
-  access_key_id: AKIAIGCLPOYPKGXSOKMA
-  secret_access_key: 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
+  access_key_id: 
+  secret_access_key: 
   region: us-west-2
   app: rubyonrails
   env: rails-env-dev
